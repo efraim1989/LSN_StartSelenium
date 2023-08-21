@@ -4,6 +4,8 @@ public class MainCar {
 
     public static void main(String[] args) {
 
+        System.out.println("======================START OOP2=============================");
+
 
         int[] ar = {3,7,6};
 
@@ -21,13 +23,21 @@ public class MainCar {
 
         Car.fire();
 
+        System.out.println("=====================C1===========================");
+
         Car c1 = new Car(2020);
 
         System.out.println(c1.getYear());
 
+        System.out.println("=====================C2===========================");
+
+
         Car c2 = new Car(0.0001, -2023, 2, "Fignya");
 
         System.out.println(c2);
+
+        System.out.println("=====================C3===========================");
+
 
         Car c3 = new Car();
         c3.setEngine(1.5);
@@ -37,9 +47,22 @@ public class MainCar {
 
         System.out.println(c3);
 
+        System.out.println("=====================C4===========================");
+
+
         Car c4 = new Car()
                 .withYear(2020)
                 .withEngine(2.4);
+
+        System.out.println(c4);
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println("=====================START OOP3===========================");
+
+
 
         SportCar sc1 = new SportCar();
         System.out.println(sc1.getBrand());

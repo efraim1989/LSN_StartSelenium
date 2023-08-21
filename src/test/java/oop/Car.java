@@ -1,7 +1,7 @@
 package oop;
 
 public class Car{
-
+////////////////////////////////////////////////////////////////
     // characteristics - fields - properties - data members
 
     private double engine; // 8byte
@@ -41,11 +41,12 @@ public class Car{
 
 ////////////////////////////////////////////////////////////////////////
     //constructors
+
     // 1. default constructor//
    public Car(){}
 
 
-    // 2. custom constructor//
+    // 2. custom constructors//
 
     public Car(int year){
         this.year = year;
@@ -70,6 +71,8 @@ public class Car{
         this.model = model;
     }
 //===========================================================
+    //setters// & modified setters //
+
     public void setEngine(double engine) {
         if(engine<0) return;
         this.engine = engine;
@@ -107,6 +110,9 @@ public class Car{
     public void setPrice(double price) {
         this.price = price;
     }
+    //================================================================
+
+    //getters//
 
     public double getEngine() {
         return engine;
@@ -136,10 +142,12 @@ public class Car{
         return price;
     }
 
+//================================================================================
+    //toString methods
 
     @Override
     public String toString() {
-        return "oop.Car{" +
+        return "Car{" +
                 "engine=" + engine +
                 ", year=" + year +
                 ", electric=" + electric +
