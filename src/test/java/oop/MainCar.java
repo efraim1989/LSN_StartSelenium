@@ -5,15 +5,27 @@ public class MainCar {
     public static void main(String[] args) {
 
 
-        Car c = new Car(2007, 2000, true, 1, "BMW");
+        int[] ar = {3,7,6};
+
+        System.out.println(ar);
+
+        System.out.println(ar[1]);
+
+        Car c = new Car();
 
         System.out.println(c);
+
         System.out.println(c.getBrand());
 
-        Car c1 = new Car();
+        c.toDrive();
+
+        Car.fire();
+
+        Car c1 = new Car(2020);
+
         System.out.println(c1.getYear());
 
-        Car c2 = new Car(2000, 0.0001, true, 1, "BMW");
+        Car c2 = new Car(0.0001, -2023, 2, "Fignya");
 
         System.out.println(c2);
 

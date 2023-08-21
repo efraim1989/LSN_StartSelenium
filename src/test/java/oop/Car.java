@@ -41,11 +41,11 @@ public class Car{
 
 ////////////////////////////////////////////////////////////////////////
     //constructors
-    // 1. default constructor
+    // 1. default constructor//
    public Car(){}
 
 
-    // 2. custom constructor
+    // 2. custom constructor//
 
     public Car(int year){
         this.year = year;
@@ -153,6 +153,15 @@ public class Car{
 
 }
 
+/*
+    Israel                                                              USA
+    O
+    X   []   ?   customs  ->       \___[]___________}  -> customs ? -> []
+                                        class
+                 setter(?)                                   getter()
 
+
+
+ */
 
 
