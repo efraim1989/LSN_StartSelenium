@@ -1,6 +1,6 @@
 package oop;
 
-public class Formula1 extends SportCar implements Moveable{
+public class Formula1 extends SportCar implements Moveable, Saleable{
 
     private double length;
 

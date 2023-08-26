@@ -73,8 +73,10 @@ public class MainCar {
         Formula1 f1 = new Formula1();
         f1.sendSOS();
 
-        Moveable.anyMethod();
-        f1.otherMethods();
+        f1.tosale();
+
+        Moveable.anyMethod();   //static method of interface
+        f1.otherMethods();      //default method of interface/ objects can use this type of methods!!!
 
 
         Car c5 = new Formula1();
@@ -83,6 +85,13 @@ public class MainCar {
 
 
         //        oop.Moveable m2 = new oop.Car();
+        //////////////////////////////////////////////
+        //overriding
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        System.out.println("=====================Overriding===========================");
 
         t1.toDrive();
         sc1.toDrive();
@@ -93,10 +102,15 @@ public class MainCar {
         cars[1] = sc1;
         cars[2] = f1;
 
+        System.out.println();
+        System.out.println("======for each car=======");
 
         for(Car car : cars) {
             car.toDrive();
         }
+        System.out.println("===========================");
+
+
 
         Moveable[] arr = new Moveable[2];
         arr[0] = new Formula1();
@@ -138,9 +152,11 @@ public class MainCar {
                                             model = null
                                            }
 
-                            Inharitance
+================================================================
 
-                                X  oop.Moveable abstract sendSOS() X
+                            Inheritance
+
+                                X  Moveable abstract sendSOS() X
                             oop.Car                                                      Boat
              |                               |                     |                             |
            oop.Truck                           oop.SportCar               FishBoat                     SportBoat
@@ -150,6 +166,6 @@ public class MainCar {
 
                                send SOS signal
 
-                               interface oop.Moveable
+                               interface Moveable
                                sendSOS();
  */

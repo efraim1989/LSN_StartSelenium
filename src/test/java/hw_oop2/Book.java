@@ -1,4 +1,4 @@
-package HW;
+package hw_oop2;
 
 public class Book {
 

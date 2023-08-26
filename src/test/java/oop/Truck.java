@@ -2,6 +2,8 @@ package oop;
 
 public class Truck extends Car implements  Moveable{
 
+    private double weight;
+
     @Override
     public void toDrive() {
         super.toDrive();

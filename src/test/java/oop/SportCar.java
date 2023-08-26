@@ -2,7 +2,7 @@ package oop;
 
 public class SportCar extends Car {
 
-    private int acceleration;
+    private double acceleration;
 
     @Override
     public void toDrive() {

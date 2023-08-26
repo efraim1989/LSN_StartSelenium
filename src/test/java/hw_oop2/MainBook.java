@@ -1,4 +1,4 @@
-package HW;
+package hw_oop2;
 
 public class MainBook {
     public static void main(String[] args){
