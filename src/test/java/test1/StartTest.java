@@ -48,6 +48,8 @@ public class StartTest {
         wd.findElement(By.cssSelector("[href^='/log']"));
         wd.findElement(By.cssSelector("[href$='gin']"));
         wd.findElement(By.cssSelector("[class='active']"));
+
+        System.out.println(wd.findElement(By.cssSelector("[href='/about']")).getAttribute("href"));
     }
 
 
