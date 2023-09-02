@@ -22,6 +22,8 @@ public class StartTest {
 //      wd.get("https://telranedu.web.app/home");
 
        wd.navigate().to("https://telranedu.web.app/home");
+       wd.manage().window().maximize();
+
 
 //      wd.navigate().back());
 //        wd.navigate().forward();
@@ -30,7 +32,7 @@ public class StartTest {
     }
 
     @Test
-    public void testMethod(){
+    public void testMethod(){   //strategy shortly css
         WebElement element = wd.findElement(By.tagName("a"));
 
         List<WebElement> elements = wd.findElements(By.tagName("div"));
@@ -42,14 +44,14 @@ public class StartTest {
         wd.findElement(By.partialLinkText("OM"));
     }
 
-    public void testMethod1(){
-        wd.findElement(By.cssSelector("[href='/login']"));
-        wd.findElement(By.cssSelector("[href*='og']"));
-        wd.findElement(By.cssSelector("[href^='/log']"));
-        wd.findElement(By.cssSelector("[href$='gin']"));
+    public void testMethod1(){  //strategy css selector universal
+        wd.findElement(By.cssSelector("a[href='/login']"));
+        wd.findElement(By.cssSelector("a[href*='og']"));
+        wd.findElement(By.cssSelector("a[href^='/log']"));
+        wd.findElement(By.cssSelector("a[href$='gin']"));
         wd.findElement(By.cssSelector("[class='active']"));
 
-        System.out.println(wd.findElement(By.cssSelector("[href='/about']")).getAttribute("href"));
+        System.out.println(wd.findElement(By.cssSelector("[id='root']")).getAttribute("class"));
     }
 
 
@@ -57,7 +59,7 @@ public class StartTest {
     @AfterMethod
     public void postcondition(){
     //    wd.close();
-    //   wd.quit();
+       wd.quit();
 
     }
 

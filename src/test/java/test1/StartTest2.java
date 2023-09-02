@@ -61,6 +61,7 @@ public class StartTest2 {
         wd.findElement(By.xpath("//*[starts-with(@href,'/log')]"));
 
         wd.findElement(By.cssSelector("[href$='gin']"));
+        // v xPath net takoi funkzii
     }
 
 

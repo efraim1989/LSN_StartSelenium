@@ -26,8 +26,6 @@ public class TableTest {
         Assert.assertEquals(text, "Canada");
         Assert.assertTrue(text.contains("Can"));
 
-
-
     }
 
 }
